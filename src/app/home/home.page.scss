@@ -1,0 +1,107 @@
+// #container {
+//   text-align: center;
+
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+
+// #container strong {
+//   font-size: 20px;
+//   line-height: 26px;
+// }
+
+// #container p {
+//   font-size: 16px;
+//   line-height: 22px;
+
+//   color: #8c8c8c;
+
+//   margin: 0;
+// }
+
+// #container a {
+//   text-decoration: none;
+// }
+
+// ion-content ion-toolbar {
+//   --background: translucent;
+// }
+
+// .image-container {
+//   min-height: 200px;
+//   background-size: cover;
+// }
+ 
+// @media (min-width: 0px) {
+//   .images {
+//     column-count: 2;
+//   }
+// }
+ 
+// @media (min-width: 420px) {
+//   .images {
+//     column-count: 3;
+//   }
+// }
+ 
+// @media (min-width: 720px) {
+//   .images {
+//     column-count: 4;
+//   }
+// }
+ 
+.one-image {
+  margin: 2px;
+}
+
+.txtcenter{
+  text-align: center;
+}
+
+.navuserimg {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  float: right;
+}
+
+.docUpload {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.docImg {
+  width: 30vw;
+  height: 30vh;
+  margin-top: 10px;
+  position: relative;
+}
+.imgFooter {
+  margin: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+.imgFooter ion-badge:first-child {
+  float: left;
+  zoom: 1.1;
+}
+.imgFooter ion-badge:last-child {
+  float: right;
+  zoom: 1.1;
+}
+
+@media only screen and (max-width: 420px) {
+  .docImg {
+    width: 45vw;
+    height: 30vh;
+    margin-top: 10px;
+    position: relative;
+  }
+}

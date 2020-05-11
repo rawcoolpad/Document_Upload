@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title center color="primary" class="txtcenter">
+      Document Chooser
+      <span (click)="presentActionSheet()">
+        <img src="assets/imgs/profilee.png" class="navuserimg" *ngIf="!profPic">
+        <img [src]="profPic" class="navuserimg" *ngIf="profPic">
+      </span>
+      <span (click)="getDocs()">
+        <ion-icon name="document-attach-sharp" style="float:right; zoom: 1.5; padding: 0px 5px;"></ion-icon>
+      </span>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class='docUpload'>
+    <ion-card class='docImg' *ngFor="let img of imageResponse">
+      <div class='image'><img (click)="Viewimg(img)" src="{{img}}" alt="" /></div>
+      <div class='imgFooter'>
+        <ion-badge (click)="CropImg(img)"><ion-icon name="create"></ion-icon> Edit</ion-badge>
+        <ion-badge (click)="removeDoc(img)"><ion-icon name="trash"></ion-icon> Delete</ion-badge>
+      </div>
+    </ion-card>
+  </div>
+</ion-content>
